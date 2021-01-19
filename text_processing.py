@@ -34,15 +34,12 @@ def normalize(input_string):
              'extra space'
     """
 
-    temp_list = input_string.split()
-    print(temp_list)
+    input_string = input_string.lower()
 
-    for word in temp_list :
-        word = word.lower()
+    temp_list = input_string.split()
 
     print(f"temp_list : {temp_list}")
     
-
     normalized_string = " ".join(temp_list)
     return normalized_string
 
